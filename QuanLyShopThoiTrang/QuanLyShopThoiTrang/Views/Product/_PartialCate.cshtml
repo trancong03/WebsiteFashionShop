@@ -1,0 +1,56 @@
+﻿@model IEnumerable<QuanLyShopThoiTrang.Models.Category>
+
+        <ul class="sub-menu">
+            <li>
+                <a class="sub-link" href="#">Áo <i class="arrow">></i></a>
+                <ul class="sub-sub-menu">
+                    @foreach (var item in Model)
+                    {
+                        if (item.category_id >= 1 && item.category_id <= 6)
+                        {
+                            <li><a href="~/Product/ViewAo?id=@item.category_id">@item.category_name</a></li>
+                        }
+                    }
+                </ul>
+            </li>
+            <li>
+                <a class="sub-link" href="#">Quần <i class="arrow">></i></a>
+                <ul class="sub-sub-menu">
+                    @foreach (var item in Model)
+                    {
+                        if (item.category_id >= 7 && item.category_id <= 9)
+                        {
+                            <li><a href="~/Product/ViewAo?id=@item.category_id">@item.category_name</a></li>
+                        }
+                    }
+                </ul>
+            </li>
+            <li>
+                <a class="sub-link" href="#">Đầm <i class="arrow">></i></a>
+                <ul class="sub-sub-menu">
+                    @foreach (var item in Model)
+                    {
+                        if (item.category_id >= 10 && item.category_id <= 11)
+                        {
+                            <li><a href="~/Product/ViewAo?id=@item.category_id">@item.category_name</a></li>
+                        }
+                    }
+                </ul>
+            </li>
+            <li>
+                <a class="sub-link" href="#">Nón Giày <i class="arrow">></i></a>
+                <ul class="sub-sub-menu">
+                    @foreach (var item in Model)
+                    {
+                        if (item.category_id >= 12 && item.category_id <= 13)
+                        {
+                            <li><a href="~/Product/ViewAo?id=@item.category_id">@item.category_name</a></li>
+                        }
+                    }
+                </ul>
+            </li>
+            <li><a class="sub-link" href="#">Phụ kiện</a></li>
+            <li><a class="sub-link" href="#">Bộ</a></li>
+        </ul>
+  
+

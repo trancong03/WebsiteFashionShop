@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.25, 13.125" name="QuanLyTheCIU1">
+  <DataContextMoniker Name="/QuanLyTheCIU1DataContext" />
+  <nestedChildShapes>
+    <classShape Id="5a43ee5f-ebe7-4f81-8eb7-c22406d04926" absoluteBounds="3.5, 4, 2, 1.193992513020834">
+      <DataClassMoniker Name="/QuanLyTheCIU1DataContext/Size" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6124b56e-0626-4489-b001-6052ca770213" absoluteBounds="3.515, 4.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="18a5cdaf-e9d6-464a-8d26-e366f4cc75ce" absoluteBounds="6.25, 1, 2, 1.9631982421875003">
+      <DataClassMoniker Name="/QuanLyTheCIU1DataContext/ProductVariant" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f9bdefef-54c2-4e45-937c-acd59e2e127b" absoluteBounds="6.265, 1.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="09a215b6-584f-49ca-a2cf-23e54282da94" absoluteBounds="3.5, 0.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/QuanLyTheCIU1DataContext/Product" />
+      <nestedChildShapes>
+        <elementListCompartment Id="33141aae-8c74-4ed2-af55-9b760641850b" absoluteBounds="3.515, 1.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="45d6c22f-61c6-42f0-85d8-043822da5406" absoluteBounds="6.25, 8, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/QuanLyTheCIU1DataContext/Order" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bae39188-4513-4230-9a8b-64b59e5d1cf5" absoluteBounds="6.265, 8.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="349e7bd5-e44a-4d24-aa40-ca27c3e6a09e" absoluteBounds="9, 1.25, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/QuanLyTheCIU1DataContext/OrderDetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6445fdd3-c50d-4deb-aa45-63676c6b864f" absoluteBounds="9.015, 1.71, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e08535a9-17a5-4a81-9646-7583dfa77ef0" absoluteBounds="3.5, 8.125, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/QuanLyTheCIU1DataContext/Customer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="18debc66-9f5b-429e-a56e-3110af70ecde" absoluteBounds="3.515, 8.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f4a6acc5-c510-425e-8fd4-b8113885760a" absoluteBounds="3.5, 5.875, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/QuanLyTheCIU1DataContext/Color" />
+      <nestedChildShapes>
+        <elementListCompartment Id="451a3658-c217-4cc4-a7da-73e3acced257" absoluteBounds="3.515, 6.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="02bc8df4-c101-465b-a56f-636abac65321" absoluteBounds="0.75, 1.375, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/QuanLyTheCIU1DataContext/Category" />
+      <nestedChildShapes>
+        <elementListCompartment Id="74ed94aa-45c4-427f-8a19-1435e7c8d698" absoluteBounds="0.765, 1.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cfc79504-0d57-47ad-b198-fe9577ffb453" absoluteBounds="6.25, 11.125, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/QuanLyTheCIU1DataContext/Account" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2733b874-56b4-4145-a9dd-19ba8cefb789" absoluteBounds="6.265, 11.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 4.59699625651042); (6.63541416666667 : 4.59699625651042 : JumpStart); (6.80208083333333 : 4.59699625651042 : JumpEnd); (7.25 : 4.59699625651042); (7.25 : 2.9631982421875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QuanLyTheCIU1DataContext/Size/Size_ProductVariant" />
+      <nodes>
+        <classShapeMoniker Id="5a43ee5f-ebe7-4f81-8eb7-c22406d04926" />
+        <classShapeMoniker Id="18a5cdaf-e9d6-464a-8d26-e366f4cc75ce" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 1.98159912109375); (6.25 : 1.98159912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QuanLyTheCIU1DataContext/Product/Product_ProductVariant" />
+      <nodes>
+        <classShapeMoniker Id="09a215b6-584f-49ca-a2cf-23e54282da94" />
+        <classShapeMoniker Id="18a5cdaf-e9d6-464a-8d26-e366f4cc75ce" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 8.98159912109375); (10 : 8.98159912109375); (10 : 2.82859537760417)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QuanLyTheCIU1DataContext/Order/Order_OrderDetail" />
+      <nodes>
+        <classShapeMoniker Id="45d6c22f-61c6-42f0-85d8-043822da5406" />
+        <classShapeMoniker Id="349e7bd5-e44a-4d24-aa40-ca27c3e6a09e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 2.03929768880208); (9 : 2.03929768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QuanLyTheCIU1DataContext/ProductVariant/ProductVariant_OrderDetail" />
+      <nodes>
+        <classShapeMoniker Id="18a5cdaf-e9d6-464a-8d26-e366f4cc75ce" />
+        <classShapeMoniker Id="349e7bd5-e44a-4d24-aa40-ca27c3e6a09e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 9.01044840494792); (6.25 : 9.01044840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QuanLyTheCIU1DataContext/Customer/Customer_Order" />
+      <nodes>
+        <classShapeMoniker Id="e08535a9-17a5-4a81-9646-7583dfa77ef0" />
+        <classShapeMoniker Id="45d6c22f-61c6-42f0-85d8-043822da5406" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 6.47199625651042); (6.7187475 : 6.47199625651042); (6.7187475 : 2.9631982421875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QuanLyTheCIU1DataContext/Color/Color_ProductVariant" />
+      <nodes>
+        <classShapeMoniker Id="f4a6acc5-c510-425e-8fd4-b8113885760a" />
+        <classShapeMoniker Id="18a5cdaf-e9d6-464a-8d26-e366f4cc75ce" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 1.97199625651042); (3.5 : 1.97199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QuanLyTheCIU1DataContext/Category/Category_Product" />
+      <nodes>
+        <classShapeMoniker Id="02bc8df4-c101-465b-a56f-636abac65321" />
+        <classShapeMoniker Id="09a215b6-584f-49ca-a2cf-23e54282da94" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.5 : 9.89589680989583); (4.5 : 12.0104484049479); (6.25 : 12.0104484049479)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QuanLyTheCIU1DataContext/Customer/Customer_Account" />
+      <nodes>
+        <classShapeMoniker Id="e08535a9-17a5-4a81-9646-7583dfa77ef0" />
+        <classShapeMoniker Id="cfc79504-0d57-47ad-b198-fe9577ffb453" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -1,0 +1,53 @@
+﻿@using QuanLyShopThoiTrang.Models;
+@model List<GioHang>
+
+@{
+    ViewBag.Title = "GioHang";
+    Layout = "~/Views/Shared/_LayoutThoiTrang.cshtml";
+}
+
+<h2>GioHang</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th></th>
+        <th>
+            Sản Phẩm
+        </th>
+        <th></th>
+        <th>
+            Giá
+        </th>
+        <th>
+            Số Lượng
+        </th>
+        <th>
+            Tổng cộng
+        </th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            @using (Html.BeginForm("CapNhatGioHang", "GioHang", new { id = item.iProductid }))
+            {
+               
+                <img src="~/Image/SanPham/@item.iImage" />
+                <td width="29%"> @item.iTensp</td>
+                <td width="22%"><img src="/HinhAnhSP/@item.iImage" width="50%" /></td>
+
+                <td width="5%"><input type="number" name="txt_SoLuong" value="@item.iSoluong" style="width:30px" /></td>
+                <td width="12%"> @string.Format("{0:0,0}", item.dPrice)</td>
+                <td width="12%"> @string.Format("{0:0,0}", item.dToltalPrice)</td>
+                <td><a href="@Url.Action("XoaGioHang", "GioHang", new { @id = item.iProductid })">Delete</a></td>
+                <td width="10%"><input class="btn btn-primary" type="submit" value="Update" /></td>
+            }
+
+        </tr>
+
+    }
+   
+</table>

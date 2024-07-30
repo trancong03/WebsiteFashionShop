@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{472A0919-C92A-4D6F-9741-CEB02F7626E7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QuanLyShopThoiTrang</RootNamespace>
+    <AssemblyName>QuanLyShopThoiTrang</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList.Mvc, Version=4.5.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Asset\style\StyleAdminFunction.css" />
+    <Content Include="Asset\style\style.css" />
+    <Content Include="Asset\style\styleDetails.css" />
+    <Content Include="Asset\style\StyleSheet1.css" />
+    <Content Include="Content\PagedList.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Image\Banner\images.jpg" />
+    <Content Include="Image\Banner\Slide.png" />
+    <Content Include="Image\Banner\slide1.png" />
+    <Content Include="Image\Banner\slide2.png" />
+    <Content Include="Image\Banner\slide3.jpg" />
+    <Content Include="Image\Banner\slide3.png" />
+    <Content Include="Image\Banner\slide4.jpg" />
+    <Content Include="Image\Logo\atm.png" />
+    <Content Include="Image\Logo\backgroundBanner.htm" />
+    <Content Include="Image\Logo\BoCongThuong.jpg" />
+    <Content Include="Image\Logo\cash.png" />
+    <Content Include="Image\Logo\logo.png" />
+    <Content Include="Image\Logo\Logo1.png" />
+    <Content Include="Image\Logo\momo.png" />
+    <Content Include="Image\Logo\vnpt.png" />
+    <Content Include="Image\SanPham\A010.jpg" />
+    <Content Include="Image\SanPham\A011.jpg" />
+    <Content Include="Image\SanPham\A020.jpg" />
+    <Content Include="Image\SanPham\A021.jpg" />
+    <Content Include="Image\SanPham\A030.jpg" />
+    <Content Include="Image\SanPham\A031.jpg" />
+    <Content Include="Image\SanPham\A07.jpg" />
+    <Content Include="Image\SanPham\aokhoacdaykeo1.jpg" />
+    <Content Include="Image\SanPham\aokhoacdaykeo2.jpg" />
+    <Content Include="Image\SanPham\aokhoacdaykeo3.jpg" />
+    <Content Include="Image\SanPham\aokhoacdaykeo4.jpg" />
+    <Content Include="Image\SanPham\aokhoacdaykeo5.jpg" />
+    <Content Include="Image\SanPham\aokhoacdaykeo6.jpg" />
+    <Content Include="Image\SanPham\aokieu1.jpg" />
+    <Content Include="Image\SanPham\aokieu2.jpg" />
+    <Content Include="Image\SanPham\aokieu3.jpg" />
+    <Content Include="Image\SanPham\aokieu4.jpg" />
+    <Content Include="Image\SanPham\aokieu5.jpg" />
+    <Content Include="Image\SanPham\aokieu6.jpg" />
+    <Content Include="Image\SanPham\aokieu7.jpg" />
+    <Content Include="Image\SanPham\aolen1.jpg" />
+    <Content Include="Image\SanPham\aolen2.jpg" />
+    <Content Include="Image\SanPham\aolen3.jpg" />
+    <Content Include="Image\SanPham\aolen4.jpg" />
+    <Content Include="Image\SanPham\aolen5.jpg" />
+    <Content Include="Image\SanPham\aolen6.jpg" />
+    <Content Include="Image\SanPham\aolen7.jpg" />
+    <Content Include="Image\SanPham\aopolo1.jpg" />
+    <Content Include="Image\SanPham\aopolo2.jpg" />
+    <Content Include="Image\SanPham\aopolo3.jpg" />
+    <Content Include="Image\SanPham\aopolo4.jpg" />
+    <Content Include="Image\SanPham\aopolo5.jpg" />
+    <Content Include="Image\SanPham\aopolo6.jpg" />
+    <Content Include="Image\SanPham\B010.jpg" />
+    <Content Include="Image\SanPham\B011.jpg" />
+    <Content Include="Image\SanPham\B012.jpg" />
+    <Content Include="Image\SanPham\C010.jpg" />
+    <Content Include="Image\SanPham\C011.jpg" />
+    <Content Include="Image\SanPham\cardigan1.jpg" />
+    <Content Include="Image\SanPham\D010.jpg" />
+    <Content Include="Image\SanPham\D011.jpg" />
+    <Content Include="Image\SanPham\D021.jpg" />
+    <Content Include="Image\SanPham\D022.jpg" />
+    <Content Include="Image\SanPham\D031.jpg" />
+    <Content Include="Image\SanPham\D041.jpg" />
+    <Content Include="Image\SanPham\D042.jpg" />
+    <Content Include="Image\SanPham\D051.jpg" />
+    <Content Include="Image\SanPham\D052.jpg" />
+    <Content Include="Image\SanPham\dam1D.jpg" />
+    <Content Include="Image\SanPham\dam2D.jpg" />
+    <Content Include="Image\SanPham\dam3T.jpg" />
+    <Content Include="Image\SanPham\dam4B.jpg" />
+    <Content Include="Image\SanPham\dam5T.jpg" />
+    <Content Include="Image\SanPham\E010.jpg" />
+    <Content Include="Image\SanPham\E011.jpg" />
+    <Content Include="Image\SanPham\F010.jpg" />
+    <Content Include="Image\SanPham\F011.jpg" />
+    <Content Include="Image\SanPham\G010.jpg" />
+    <Content Include="Image\SanPham\G010.png" />
+    <Content Include="Image\SanPham\G011.jpg" />
+    <Content Include="Image\SanPham\G011.png" />
+    <Content Include="Image\SanPham\G012.jpg" />
+    <Content Include="Image\SanPham\G012.png" />
+    <Content Include="Image\SanPham\G013.png" />
+    <Content Include="Image\SanPham\G020.png" />
+    <Content Include="Image\SanPham\G021.png" />
+    <Content Include="Image\SanPham\G022.png" />
+    <Content Include="Image\SanPham\G030.png" />
+    <Content Include="Image\SanPham\G031.png" />
+    <Content Include="Image\SanPham\G032.png" />
+    <Content Include="Image\SanPham\G040.png" />
+    <Content Include="Image\SanPham\G041.png" />
+    <Content Include="Image\SanPham\G042.png" />
+    <Content Include="Image\SanPham\G050.png" />
+    <Content Include="Image\SanPham\G051.png" />
+    <Content Include="Image\SanPham\G052.png" />
+    <Content Include="Image\SanPham\G060.png" />
+    <Content Include="Image\SanPham\H010.jpg" />
+    <Content Include="Image\SanPham\H011.jpg" />
+    <Content Include="Image\SanPham\I010.jpg" />
+    <Content Include="Image\SanPham\I011.jpg" />
+    <Content Include="Image\SanPham\M010.png" />
+    <Content Include="Image\SanPham\M011.png" />
+    <Content Include="Image\SanPham\M012.png" />
+    <Content Include="Image\SanPham\M020.png" />
+    <Content Include="Image\SanPham\M021.png" />
+    <Content Include="Image\SanPham\M022.png" />
+    <Content Include="Image\SanPham\M030.png" />
+    <Content Include="Image\SanPham\M031.png" />
+    <Content Include="Image\SanPham\M032.png" />
+    <Content Include="Image\SanPham\M040.jpg" />
+    <Content Include="Image\SanPham\M041.jpg" />
+    <Content Include="Image\SanPham\M042.jpg" />
+    <Content Include="Image\SanPham\M050.jpg" />
+    <Content Include="Image\SanPham\Q010.jpg" />
+    <Content Include="Image\SanPham\Q011.jpg" />
+    <Content Include="Image\SanPham\somi1.jpg" />
+    <Content Include="Image\SanPham\somi2.jpg" />
+    <Content Include="Image\SanPham\somi2B.jpg" />
+    <Content Include="Image\SanPham\somi2H.jpg" />
+    <Content Include="Image\SanPham\somi2T.jpg" />
+    <Content Include="Image\SanPham\somi3L.jpg" />
+    <Content Include="Image\SanPham\somi3T.jpg" />
+    <Content Include="Image\SanPham\sweater1.jpg" />
+    <Content Include="Image\SanPham\sweater2.jpg" />
+    <Content Include="Image\SanPham\sweater3.jpg" />
+    <Content Include="Image\SanPham\sweater4.jpg" />
+    <Content Include="Image\SanPham\sweater5.jpg" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\CateProductController.cs" />
+    <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ProductController.cs" />
+    <Compile Include="Controllers\DNController.cs" />
+    <Compile Include="Controllers\GioHangController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountRegister.cs" />
+    <Compile Include="Models\AccountTK.cs" />
+    <Compile Include="Models\ForgetPassWord.cs" />
+    <Compile Include="Models\GioHang.cs" />
+    <Compile Include="Models\QuanLyTheCIU1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyTheCIU1.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="packages.config" />
+    <Content Include="Views\Shared\_LayoutThoiTrang.cshtml" />
+    <Content Include="Views\Shared\_PartialFooter.cshtml" />
+    <Content Include="Views\Shared\_PartialHeader.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Product\ProductPatial.cshtml" />
+    <Content Include="Views\Product\AllSP.cshtml" />
+    <Content Include="ClassDiagram1.cd" />
+    <Content Include="Views\Product\_PartialCate.cshtml" />
+    <Content Include="Views\Shared\_PartialPanel.cshtml" />
+    <Content Include="Views\Home\_PatialOutstanding.cshtml" />
+    <Content Include="Views\Home\_PatialNEWARRIVALS.cshtml" />
+    <Content Include="Views\DN\Register.cshtml" />
+    <Content Include="Views\DN\DangNhap.cshtml" />
+    <Content Include="Views\DN\QuenMatKhau.cshtml" />
+    <Content Include="Views\Home\AdminDashboard.cshtml" />
+    <Content Include="Views\Product\Details.cshtml" />
+    <Content Include="Views\Product\SanPhamNew.cshtml" />
+    <Content Include="Views\Product\SearchSanPham.cshtml" />
+    <Content Include="Views\Product\ViewAo.cshtml" />
+    <Content Include="Views\GioHang\GioHangPartial.cshtml" />
+    <Content Include="Views\GioHang\GioHang.cshtml" />
+    <Content Include="Areas\Admin\Views\CateProduct\AddCate.cshtml" />
+    <Content Include="Areas\Admin\Views\CateProduct\CateProduct.cshtml" />
+    <Content Include="Areas\Admin\Views\Home\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Product\ProductPatial.cshtml" />
+    <Content Include="Areas\Admin\Views\Product\ProductVariantPatial.cshtml" />
+    <Content Include="Areas\Admin\Views\Product\SuaMauSP.cshtml" />
+    <Content Include="Areas\Admin\Views\Product\SuaSP.cshtml" />
+    <Content Include="Areas\Admin\Views\Product\ThemMauSP.cshtml" />
+    <Content Include="Areas\Admin\Views\Product\ThemSP.cshtml" />
+    <Content Include="Areas\Admin\Views\Product\XoaMauSP.cshtml" />
+    <Content Include="Areas\Admin\Views\Product\XoaSP.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\AdminFunctionPartial.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\AdminLayoutPage1.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\ViewStart.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_PartialHeader.cshtml" />
+    <Content Include="Areas\Admin\Views\web.config" />
+    <Content Include="Models\QuanLyTheCIU1.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>QuanLyTheCIU1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Models\QuanLyTheCIU1.dbml.layout">
+      <DependentUpon>QuanLyTheCIU1.dbml</DependentUpon>
+    </None>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Areas\Admin\Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>27100</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:27100/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

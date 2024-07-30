@@ -1,0 +1,61 @@
+﻿@model IEnumerable<QuanLyShopThoiTrang.Models.Product>
+
+<div style="margin-left: 10%; margin-right: 10%; background-color:Background" id="cardCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner ">
+        <div class="carousel-item active ">
+            <div class="card-group">
+                @foreach (var item in Model.Take(3))
+                {
+                    <div class="card d-inline " style="margin-left:2%;margin-right:2%">
+
+                            <img  st class="card-img-top" src="~/Image/SanPham/@item.ImageSP" />
+                        
+                        <h4 class="CateProduct position-absolute"> @item.category_id</h4>
+                        <button type="button" class="btn custom-btn position-absolute" style="z-index:2;top:50%;left:32%;">Mua Ngay</button>
+                    </div>
+                }
+            </div>
+        </div>
+        <div class="carousel-item ">
+            <div class="card-group">
+                @foreach (var item in Model.Skip(3).Take(3))
+                {
+                    <div class="card d-inline " style="margin-left:2%;margin-right:2%">
+                       
+                            <img style="height:400px" st class="card-img-top" src="~/Image/SanPham/@item.ImageSP" />
+                        
+                        <h4 class="CateProduct position-absolute"> @item.category_id</h4>
+                        <button type="button" class="btn custom-btn position-absolute" style="z-index:2;top:50%;left:32%;">Mua Ngay</button>
+                  </div>
+                }
+            </div>
+        </div>
+        <div class="carousel-item  ">
+            <div class="card-group">
+                @foreach (var item in Model.Skip(6).Take(3))
+                {
+
+                    <div class="card d-inline " style="margin-left:2%;margin-right:2%">
+
+                       
+                            <img style="height:400px" st class="card-img-top" src="~/Image/SanPham/@item.ImageSP" />
+                     
+                        <h4 class="CateProduct position-absolute"> @item.category_id</h4>
+
+                        <button type="button" class="btn custom-btn position-absolute" style="z-index:2;top:50%;left:32%;">Mua Ngay</button>
+                    </div>
+                }
+            </div>
+
+        </div>
+        <!-- Add more carousel items as needed -->
+    </div>
+    <a class="carousel-control-prev" href="#cardCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Trước</span>
+    </a>
+    <a class="carousel-control-next" href="#cardCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Tiếp theo</span>
+    </a>
+</div>

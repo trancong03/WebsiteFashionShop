@@ -1,0 +1,117 @@
+﻿
+.main-menu {
+    z-index: 10;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+    .main-menu li {
+        display: inline-block;
+        position: relative;
+    }
+
+.main-link {
+    z-index:10;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+    background-color: #f9f1f1;
+}
+
+.sub-menu {
+    z-index: 10;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #e0e0e0;
+    width: 200px; /* Adjust width as needed */
+}
+
+    .sub-menu li {
+        display: block;
+    }
+
+.sub-link {
+    z-index: 10;
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+}
+    .sub-link:hover {
+        color: #ff6a00;
+    }
+.sub-sub-menu {
+    z-index: 10;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #d1d1d1;
+    width: 200px; /* Adjust width as needed */
+   
+}
+
+/* Hover effect */
+.main-menu li:hover > .sub-menu {
+    display: block;
+    
+}
+
+.sub-menu li:hover > .sub-sub-menu {
+    display: block;
+   
+}
+.sub-sub-menu li a {
+    
+    color: #333;
+    text-decoration: none;
+    margin:10px;
+}
+.sub-sub-menu li {
+    padding: 10px;
+}
+    .sub-sub-menu li:hover a {
+        color:#ff6a00;
+        text-decoration: solid;
+        
+    }
+.arrow {
+    margin-left: 10px;
+}
+
+/* Add more styles as needed */
+
+
+
+.carousel-inner {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.custom-btn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size:24px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease-in-out;
+    border-bottom: 2px solid white;
+}
+    .custom-btn:hover {
+        border-bottom: 2px solid white;
+        background-color: white;
+        color:black;
+        border-radius:0;
+    }
+.CateProduct {
+    color: white;
+    font-weight: bold;
+    z-index:2; 
+    top:40%;
+    left:32%;
+    text-transform:uppercase;
+}

@@ -1,0 +1,112 @@
+﻿@model QuanLyShopThoiTrang.Models.AccountTK
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <script src="~/Scripts/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <script src="~/JavaScript.js"></script>
+    <title>DangNhap</title>
+
+    <style>
+        body {
+            background-image: url('../../image/banner/images.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+
+
+</head>
+<body>
+    @if (ViewBag.ErrorLogin != null)
+    {
+        <div class="alert alert-warning text-center" role="alert">
+            <h2>@ViewBag.ErrorLogin</h2>
+        </div>
+    }
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card mx-auto" style="max-width: 444px;">
+                        <div class="card-header text-center" style="background-color: moccasin; margin: 20px; color: white;">
+                            Đăng Nhập
+                        </div>
+                        <div class="card-body">
+                            <form id="loginForm">
+                                <div class="form-group">
+                                    <label for="username">Tên đăng nhập:</label>
+                                    <input type="text" class="form-control" name="UserName" id="username">
+                                    @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
+                                </div>
+                                <div class="form-group">
+                                    <label for="register_password">Mật khẩu*</label>
+                                    <div class="input-group">
+                                        <input class="form-control" name="Password" type="password" id="register_password">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-secondary border-0" type="button" onclick="togglePassword()">👁️</button>
+                                        </div>
+                                    </div>
+                                    @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" }) <br />
+                                    <a>@Html.ActionLink("Quên mật khẩu", "QuenMatKhau")</a>
+                                </div>
+                                <button type="submit" class="btn btn-block" style="background-color: moccasin; border: none; color: white;">
+                                    Đăng Nhập
+                                </button>
+                            </form>
+                        </div>
+                        <div class="form-choice text-center">
+                            <p>Hoặc đăng nhập với</p>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <a href="#" class="btn btn-login btn-g">
+                                        <i class="fas fa-google"></i>
+                                        Đăng nhập với Google
+                                    </a>
+                                </div>
+                                <div class="col-sm-6">
+                                    <a href="#" class="btn btn-login btn-f">
+                                        <i class="fas fa-facebook"></i>
+                                        Đăng nhập với Facebook
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-center mt-3">
+                            <a>@Html.ActionLink("Chưa có Tài Khoản đến Đăng kí", "Register")</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+
+    <script>
+
+        function togglePassword() {
+            var passwordField = document.getElementById("register_password");
+            var passwordType = passwordField.getAttribute("type");
+
+            if (passwordType === "password") {
+                passwordField.setAttribute("type", "text");
+            } else {
+                passwordField.setAttribute("type", "password");
+            }
+        }
+    </script>
+
+</body>
+</html>
+
